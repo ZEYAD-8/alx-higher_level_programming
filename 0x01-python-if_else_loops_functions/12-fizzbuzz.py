@@ -9,5 +9,5 @@ def fizzbuzz():
             print("Buzz", end="")
             Done = True
         if not Done:
-            print(num)
+            print(num, end="")
         print(" ", end="")
