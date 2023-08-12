@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-if __name__ == "__main__" :
+if __name__ == "__main__":
     from sys import argv
     length = len(argv)
 
@@ -13,5 +13,5 @@ if __name__ == "__main__" :
 
     counter = 1
     for _ in range(0, length - counter):
-        print ("{}: {}".format(counter, argv[counter]))
+        print("{}: {}".format(counter, argv[counter]))
         counter += 1
