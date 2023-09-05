@@ -1,0 +1,50 @@
+>>> say_my_name = __import__("say_my_name").say_my_name
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'say_my_name'
+
+>>> say_my_name = __import__("3-say_my_name").say_my_name
+
+>>> say_my_name("Zeyad", "Elnaggar")
+My name is Zeyad Elnaggar
+
+>>> say_my_name("SS")
+My name is SS 
+
+>>> say_my_name("")
+My name is  
+
+>>> say_my_name(67)
+Traceback (most recent call last):
+  ...
+TypeError: First Name must be of type string.
+
+>>> say_my_name(98)
+Traceback (most recent call last):
+  ...
+TypeError: First Name must be of type string.
+
+>>> say_my_name(None)
+Traceback (most recent call last):
+  ...
+TypeError: First Name must be of type string.
+
+>>> say_my_name(Zeyad, None)
+Traceback (most recent call last):
+  ...
+NameError: name 'Zeyad' is not defined
+
+>>> say_my_name(["Zeyad", "Marwa", "Ahmed", "Danson"], ("thIS IS A LIst"))
+Traceback (most recent call last):
+  ...
+TypeError: First Name must be of type string.
+
+>>> say_my_name(89.09, "Mohammed")
+Traceback (most recent call last):
+  ...
+TypeError: First Name must be of type string.
+
+>>> say_my_name()
+Traceback (most recent call last):
+  ...
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
