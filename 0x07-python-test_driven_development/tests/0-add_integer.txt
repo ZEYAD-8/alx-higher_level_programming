@@ -1,0 +1,54 @@
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+
+>>> print(add_integer(1, 2)) #doctest: +NORMALIZE_WHITESPACE, +ELLIPSIS
+3
+
+>>> print(add_integer(4, -3)) #doctest: +NORMALIZE_WHITESPACE, +ELLIPSIS
+1
+
+>>> print(add_integer(5.0, 4.0)) #doctest: +NORMALIZE_WHITESPACE, +ELLIPSIS
+9
+
+>>> print(add_integer(2.8, 0.3)) #doctest: +NORMALIZE_WHITESPACE, +ELLIPSIS
+2
+
+>>> print(add_integer(-2.9, 0.2)) #doctest: +NORMALIZE_WHITESPACE, +ELLIPSIS
+-2
+
+>>> print(add_integer(-6, 5)) #doctest: +NORMALIZE_WHITESPACE
+-1
+
+>>> print(add_integer(-20, 6.2)) #doctest: +NORMALIZE_WHITESPACE
+-14
+
+
+>>> print(add_integer(2)) #doctest: +NORMALIZE_WHITESPACE, +ELLIPSIS
+100
+
+>>> print(add_integer("school", 4)) #doctest: +NORMALIZE_WHITESPACE, +ELLIPSIS
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+
+>>> print(add_integer(4, "korea")) #doctest: +NORMALIZE_WHITESPACE, +ELLIPSIS
+Traceback (most recent call last):    
+    ...
+TypeError: b must be an integer
+
+>>> print(add_integer(None)) #doctest: +NORMALIZE_WHITESPACE, +ELLIPSIS
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+>>> print(add_integer(4, None)) #doctest: +NORMALIZE_WHITESPACE, +ELLIPSIS
+Traceback (most recent call last):    
+    ...
+TypeError: b must be an integer
+
+>>> print(add_integer(None, None)) #doctest: +NORMALIZE_WHITESPACE, +ELLIPSIS
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
