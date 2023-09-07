@@ -4,7 +4,7 @@ In this project, I studied object instantiation in Python, delving into
 variable aliasing and object identifiers, types, and mutability. The project
 involved a series of quiz-like questions the answers to which I provided in
 single-line `.txt` files.
-
+I also created the bash script [create files](./create_files.sh) to help me create all these files at once
 
 ## Tasks :page_with_curl:
 
