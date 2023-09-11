@@ -1,2 +1,3 @@
 def lookup(obj):
-    return list(obj.__dict__)
+    """returns the list of available attributes and methods of an object"""
+    return dir(obj)
