@@ -1,6 +1,4 @@
-"""
-    A module to define lookup function
-"""
+"""A module to define lookup function"""
 
 
 def lookup(obj):
