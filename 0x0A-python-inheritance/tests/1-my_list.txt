@@ -1,0 +1,62 @@
+
+>>> MyList = _import_('1-my_list').MyList
+>>>
+>>> print(len(_import('1-my_list').MyList.__doc_) > 1)
+True
+>>> print(len(_import('1-my_list').__doc_) > 1)
+True
+
+
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(4)
+>>> my_list.append(7)
+>>> my_list.append(3)
+>>> my_list.append(5)
+>>> print(my_list)
+[1, 4, 7, 3, 5]
+>>> my_list.print_sorted()
+[1, 3, 4, 5, 7]
+>>> print(my_list)
+[1, 4, 7, 3, 5]
+
+>>> my_list = MyList() 
+>>> my_list.append(4)  
+>>> my_list.append(2) 
+>>> my_list.append(-2) 
+>>> my_list.append(-15) 
+>>> my_list.append(20)  
+>>> my_list.append(-7) 
+>>> my_list.print_sorted()
+[-15, -7, -2, 2, 4, 20]
+
+>>> empty_list = []
+>>> my_list = MyList(empty_list)
+>>> my_list.print_sorted()
+[]
+
+>>> passed_list = [2, 3, 5] 
+>>> my_list = MyList(passed_list)
+>>> my_list.print_sorted()        
+[2, 3, 5]
+
+>>> my_list = MyList()           
+>>> my_list.append(5)      
+>>> my_list.append(5)
+>>> my_list.append(5)
+>>> my_list.print_sorted() 
+[5, 5, 5]
+
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.print_sorted()
+[1]
+
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(2)
+>>> my_list.append(3)
+>>> my_list.print_sorted()
+[1, 2, 3]
+>>> print(my_list)
+[1, 2, 3]
