@@ -1,11 +1,15 @@
+Testing 1-my_list.py
+====================
 
->>> MyList = _import_('1-my_list').MyList
+>>> MyList = __import__('1-my_list').MyList
 >>>
->>> print(len(_import('1-my_list').MyList.__doc_) > 1)
+>>> print(len(__import__('1-my_list').MyList.__doc__) > 1)
 True
->>> print(len(_import('1-my_list').__doc_) > 1)
+>>> print(len(__import__('1-my_list').__doc__) > 1)
 True
 
+Usage
+=====
 
 >>> my_list = MyList()
 >>> my_list.append(1)
