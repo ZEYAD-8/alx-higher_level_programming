@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""module that defines the studned class"""
+"""module that defines the student class"""
 
 
 class Student:
