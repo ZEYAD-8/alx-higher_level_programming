@@ -4,5 +4,7 @@
 
 def read_file(filename=""):
     """function to read the file"""
+    if filename == "":
+        return
     with open(filename, encoding="UTF8") as file:
         print(file.read())
