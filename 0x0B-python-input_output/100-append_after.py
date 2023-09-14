@@ -3,7 +3,7 @@
 
 
 def append_after(filename="", search_string="", new_string=""):
-    """ 
+    """
     Function that appends a new line when a string is found
     """
 
