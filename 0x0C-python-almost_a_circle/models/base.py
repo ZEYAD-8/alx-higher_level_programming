@@ -4,8 +4,6 @@
 import json
 import csv
 import turtle
-from rectangle import Rectangle
-from square import Square
 
 
 class base:
