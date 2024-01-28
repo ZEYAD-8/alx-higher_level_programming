@@ -27,9 +27,11 @@ if __name__ == "__main__":
                        FROM states\
                        WHERE name='{:s}'\
                        ORDER BY id ASC".format(state_searched))
+
         result = cursor.fetchall()
         for row in result:
-            print(row)
+            if row[1] == argv[4]:
+                print(row)
 
     except MySQLdb.Error as e:
         print(f"Error: {e}")
