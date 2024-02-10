@@ -1,13 +1,15 @@
 #!/usr/bin/python3
-"""Takes in a URL, sends a request to the URL
-and displays the value of the variable X-Request-Id
-in the response header"""
+"""Takes in a URL and an email address,
+sends a POST request to the passed URL with the email as a parameter,
+and finally displays the body of the response."""
 
 if __name__ == '__main__':
     import sys
     import requests
     try:
-        response = requests.get(sys.argv[1])
-        print(response.headers.get('X-Request-Id'))
+        url = sys.argv[1]
+        email = {'email': sys.argv[2]}
+        response = requests.post(url, data=email)
+        print(response.text)
     except Exception:
         pass
